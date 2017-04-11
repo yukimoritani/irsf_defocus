@@ -10,6 +10,7 @@ Badpixcel correction
 
 ### getcent.py 
 Macro for measure centroid and spot radius of images in "objlist" for listed region.
+Region is listed on "xposlist", where x is j, h or k.
 
 ### getcenterpos.c
 Measure centroid and spot radius of each file.
