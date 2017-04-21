@@ -76,6 +76,7 @@ def AveradeMag(indir, band, nstar, ignore):
     #result.append([tm,posm,magm])
     return result
 
+# Usage mag.mean.py band nstar
 if __name__ == '__main__':
 
     f=open(sys.argv[1])
@@ -83,7 +84,7 @@ if __name__ == '__main__':
     f.close
     band=sys.argv[2]
 
-    nstar=7
+    nstar=int(sys.argv[3])
     magj=[]
     for i in l:
         ll=i.split()
