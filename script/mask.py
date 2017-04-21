@@ -7,7 +7,7 @@ import numpy
 def Mask(frameid, band, indir, outdir):
     ## J-band
     infile=indir+band+"f"+frameid+".fits"
-    outfile=outdir+band+"/f"+frameid+"masked.fits"
+    outfile=outdir+"/"+band+"f"+frameid+"masked.fits"
     #print infile,outfile
     os.system("bpcorrect %s %s" % (infile,outfile))
     
